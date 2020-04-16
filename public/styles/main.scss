@@ -1,0 +1,61 @@
+@font-face{
+    font-family: Quantico-bold;
+    src: url("../sources/Quantico-Bold.ttf");
+}
+
+@font-face{
+    font-family: Quantico-regular;
+    src: url("../sources/Quantico-Regular.ttf");
+}
+
+$breakpoint-sm: 1000px;
+$primary-color: #222222;
+$secondary-color: #ED1C24; 
+$primary-font-family: "Quantico-bold"; 
+$secondary-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$tertiary-font-family: "Quantico-regular";
+$font-size: 13px;
+
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0px;
+    font-family: $secondary-font-family;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0px auto;
+    display: flex;
+    padding: 0px 100px;
+
+    @media (max-width: $breakpoint-sm){
+        padding: 0px 25px;
+    }
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    outline:none;
+}
+
+button{
+    outline:none;
+}
+
+@import 'mainheader';
+@import 'mainbanner';
+@import 'mainvideo';
+@import 'mainfeatures';
+@import 'mainslider';
+@import 'mainkeyboard';
+@import 'mainspecs';
+@import 'mainpublicity';
+@import 'mainsubscribe';
+@import 'mainfooter';

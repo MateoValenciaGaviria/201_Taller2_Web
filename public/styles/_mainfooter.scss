@@ -1,0 +1,123 @@
+.mainfooter{
+/*     margin-top: -5px;
+ */    
+    background-color: $primary-color;
+    padding: 40px 0;
+
+    &__section{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    &__container{
+        display: flex;
+        margin: 0 auto;
+        max-width: 25%;
+        flex-direction: column;
+    }
+    
+    &__link{
+        color: #8D8D8D;
+        text-decoration: none;
+        font-size: 1.2em;
+        padding: 3px 3px;
+
+        &--title{
+            color: white;
+            padding: 0 0 30px 0;
+        }
+
+        &--footer{
+            color: white;
+            margin: 0 20px;
+            font-size: 14px;
+        }
+
+        &--copyright{
+            font-size: 12px;
+        }
+    }
+
+    &__line{
+        color: white;
+        width: 100%;
+        margin: 40px 0 10px;
+        &--hidden{
+            display: none;
+        }
+    }
+
+    &__information{
+        text-align: center;
+        display: block;
+        max-width: 600px;
+        margin: 30px auto 0;
+    }
+
+    &__terms{
+        margin: 20px auto;
+    }
+    
+    
+    &__copyright{
+        margin: 10px auto;
+    }
+
+    @media (max-width: $breakpoint-sm){
+
+        padding: 20px 0 0;
+
+        &__section{
+            width: 100%;
+            display: flex;
+            flex-direction: column;   
+        }
+
+        &__container{
+            display: flex;
+            justify-content: left;
+            margin: 0;
+            max-width: 100%;
+        }
+
+        &__link{
+            display: none;
+    
+            &--title{
+                display: flex;
+                padding: 10px;
+                margin: 0 25px;
+            }
+    
+            &--footer{
+                display: flex;
+                color: white;
+                margin: 0;
+                font-size: 14px;
+            }
+    
+            &--copyright{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                font-size: 12px;
+            }
+        }
+
+        &__line{
+            display: none;
+            &--hidden{
+                margin: 10px 0;
+                display: flex;
+            }
+        }
+
+        &__terms{
+            justify-content: center;
+            display: flex;
+        }
+        
+    }
+}
