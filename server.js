@@ -32,7 +32,18 @@ app.get('/store', function (req, res){
 });
 
 //Ruta para especificaciones de un producto con handlebars
-app.get('/product', function (req, res){
+app.get('/product/:name', function (req, res){
+    //Objeto contexto
+    var context = {
+        title: '',
+        img: '/images/.png',
+        description: '',
+        price: '',
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+    }
     //Renderizar vista
     res.render('product');
 });
