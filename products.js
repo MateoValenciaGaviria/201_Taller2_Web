@@ -18,6 +18,12 @@ const products = [
         description8: 'Mystic Light RGB LED design, customize your look',
         description9: 'Enrich your experience with included MSI software',
         price: 1300,
+        /* images: [
+            '/images/products/trident_x_plus_9_1.png',
+            '/images/products/trident_x_plus_9_2.png',
+            '/images/products/trident_x_plus_9_3.png',
+            '/images/products/trident_x_plus_9_4.png'
+        ] */
         img1: '/images/products/trident_x_plus_9_1.png',
         img2: '/images/products/trident_x_plus_9_2.png',
         img3: '/images/products/trident_x_plus_9_3.png',
@@ -329,9 +335,9 @@ const products = [
         description9: 'Get the best online experience with Killer LAN',
         price: 1440,
         img1: '/images/products/aegis_t13_8_1.png',
-        img2: '/images/products/aegis_t13_8_1.png',
-        img3: '/images/products/aegis_t13_8_1.png',
-        img4: '/images/products/aegis_t13_8_1.png', 
+        img2: '/images/products/aegis_t13_8_2.png',
+        img3: '/images/products/aegis_t13_8_3.png',
+        img4: '/images/products/aegis_t13_8_4.png', 
         
     },
 
@@ -485,9 +491,9 @@ const products = [
         description9: 'Embedded Software TPM and supports Hardware TPM modul',
         price: 1000,
         img1: '/images/products/cubi_in_1.png',
-        img2: '/images/products/cubi_in_1.png',
-        img3: '/images/products/cubi_in_1.png',
-        img4: '/images/products/cubi_in_1.png', 
+        img2: '/images/products/cubi_in_2.png',
+        img3: '/images/products/cubi_in_3.png',
+        img4: '/images/products/cubi_in_4.png', 
         
     },
 

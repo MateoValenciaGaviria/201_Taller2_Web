@@ -999,7 +999,7 @@ button {
   text-align: center;
   font-family: "Quantico-bold";
   color: white;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .product__footer {
@@ -1084,7 +1084,6 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(#181818), to(#0A0A0A));
   background: linear-gradient(180deg, #181818 0%, #0A0A0A 100%);
   width: 24%;
-  height: 100%;
   padding: 25px 25px 100px 0;
   margin-right: 10px;
 }
@@ -1135,5 +1134,115 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-right: 100px;
+}
+
+.productspecs {
+  background: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.productspecs__header {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  color: #ED1C24;
+  font-size: 25px;
+}
+
+.productspecs__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.productspecs__image {
+  width: 50%;
+  margin-right: 100px;
+}
+
+.productspecs__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Quantico-bold";
+  color: white;
+  width: 100%;
+}
+
+.productspecs__table {
+  width: 100%;
+}
+
+.productspecs__button {
+  margin: 30px 30px 0 2px;
+  font-family: "Quantico-bold";
+  color: white;
+  background-color: #ED1C24;
+  width: 178px;
+  height: 44px;
+  border-radius: 5px;
+  border-style: none;
+  padding: 0 50px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productspecs__img {
+  width: 100%;
+}
+
+.productspecs__imggallery {
+  width: 100%;
+}
+
+.productspecs__shopping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.productspecs__price {
+  font-family: "Quantico-bold";
+  color: white;
+  font-size: 35px;
+  margin-left: 50px;
+}
+
+.productspecs__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+.productspecs__gallery {
+  width: 25%;
+  margin: 30px;
 }
 /*# sourceMappingURL=main.css.map */

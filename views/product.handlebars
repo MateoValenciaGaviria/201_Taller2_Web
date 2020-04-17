@@ -1,20 +1,47 @@
-<div class="product">
-    <header class="product__header">
-        <h2 class="product__name">{{ title }}</h2>
+<div class="container productspecs">
+    <header class="productspecs__header">
+        <h1 class="productspecs__title">
+            {{ title }}
+        </h1>
     </header>
-
-    <section class="product__section">
-        <a href="#">
-            <img class="product__image" src="{{ img }}" alt="{{ title }}">
-        </a>
-        <p class="product__price">
-           $ {{ price }}.00
-        </p>
+    <section class="productspecs__section">
+        <div class="productspecs__image">
+            <img class="productspecs__img" src="{{ img }}" alt="{{ title }}">
+        </div>
+        <div class="productspecs__info">
+            <table class="productspecs__table">
+                <tr><td class="mainspecs__row">{{ description1 }}</td></tr>
+                <tr><td class="mainspecs__row mainspecs__row--2">{{ description2 }}</td></tr>
+                <tr><td class="mainspecs__row">{{ description3 }}</td></tr>
+                <tr><td class="mainspecs__row mainspecs__row--2">{{ description4 }}</td></tr>
+                <tr><td class="mainspecs__row">{{ description5 }}</td></tr>
+                <tr><td class="mainspecs__row mainspecs__row--2">{{ description6 }}</td></tr>
+                <tr><td class="mainspecs__row">{{ description7 }}</td></tr>
+                <tr><td class="mainspecs__row mainspecs__row--2">{{ description8 }}</td></tr>
+                <tr><td class="mainspecs__row">{{ description9 }}</td></tr>
+            </table>
+            <div class="productspecs__shopping">
+                <button class="productspecs__button">
+                        Add
+                </button>
+                <h1 class="productspecs__price">
+                    $ {{ price }}.00
+                </h1>
+            </div>
+        </div>
     </section>
-
-    <footer class="product__footer">
-        <button class="product__button">
-            Add
-        </button>
+    <footer class="productspecs__footer">
+        <div class="productspecs__gallery">
+            <img class="productspecs__imggallery" src="{{ img1 }}" alt="{{ title }}">
+        </div>
+        <div class="productspecs__gallery">
+            <img class="productspecs__imggallery" src="{{ img2 }}" alt="{{ title }}">
+        </div>
+        <div class="productspecs__gallery">
+            <img class="productspecs__imggallery" src="{{ img3 }}" alt="{{ title }}">
+        </div>
+        <div class="productspecs__gallery">
+            <img class="productspecs__imggallery" src="{{ img4 }}" alt="{{ title }}">
+        </div>
     </footer>
 </div>
