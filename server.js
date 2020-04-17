@@ -7,6 +7,9 @@ const path = require('path');
 //Importar express-handlebars
 const exphbs = require('express-handlebars');
 
+//Importar productos
+const products = require('./products');
+
 //Instanciar servidor de express
 const app = express();
 
@@ -27,23 +30,28 @@ app.get('/', function (req, res){
 
 //Ruta para la lista de productos con handlebars
 app.get('/store', function (req, res){
+    //Objeto contexto
+    var context = {
+        products: products,
+    };
+
     //Renderizar vista
     res.render('store');
 });
 
 //Ruta para especificaciones de un producto con handlebars
-app.get('/product/:name', function (req, res){
+app.get('/product/:name/:id', function (req, res){
     //Objeto contexto
-    var context = {
-        title: '',
-        img: '/images/.png',
-        description: '',
-        price: '',
-        img1: '',
-        img2: '',
-        img3: '',
-        img4: '',
-    }
+    var context = {};
+
+    //Buscar en la base de datos el producto correspondiente
+    //Pasar las variables de ese elemento al contexto
+    context = products .find(function (elem){
+        if(elem.id == req.params.id){
+            return true;
+        }
+    });
+
     //Renderizar vista
     res.render('product');
 });
