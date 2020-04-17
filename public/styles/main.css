@@ -977,6 +977,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 20px;
 }
 
 .product__header {
@@ -1021,5 +1022,118 @@ button {
   border-style: none;
   padding: 5px 80px;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.store {
+  background: #000000;
+}
+
+.store__header {
+  font-family: "Quantico-bold";
+  font-size: 20px;
+  color: white;
+}
+
+.store__sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 0 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+}
+
+.store__button {
+  margin-left: 30px;
+  font-family: "Quantico-bold";
+  color: white;
+  background-color: #ED1C24;
+  width: 156px;
+  height: 36px;
+  border-radius: 5px;
+  border-style: none;
+  padding: 0 50px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.store__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.store__filtercontainer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#181818), to(#0A0A0A));
+  background: linear-gradient(180deg, #181818 0%, #0A0A0A 100%);
+  width: 24%;
+  height: 100%;
+  padding: 25px 25px 100px 0;
+  margin-right: 10px;
+}
+
+.store__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 0;
+}
+
+.store__filtertitle {
+  font-family: "Quantico-bold";
+  font-size: 20px;
+  color: white;
+}
+
+.store__filterdata {
+  font-family: "Quantico-regular";
+  font-size: 15px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.store__chekbox {
+  cursor: pointer;
+}
+
+.store__products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  max-width: 75%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 100px;
 }
 /*# sourceMappingURL=main.css.map */

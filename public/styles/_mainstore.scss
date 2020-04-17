@@ -1,0 +1,80 @@
+.store{
+    background: #000000;
+
+    &__header{
+        font-family: $primary-font-family;
+        font-size: 20px;
+        color: white;
+    }
+
+    &__sort{
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 0 auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    &__button{
+        margin-left: 30px;
+        font-family: $primary-font-family;
+        color: white;
+        background-color: $secondary-color;
+        width: 156px;
+        height: 36px;   
+        border-radius: 5px;
+        border-style: none;
+        padding: 0 50px;
+        font-size: 20px;
+        display: flex;
+        text-align: left;
+        
+    }
+
+    &__section{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__filtercontainer{
+        background: linear-gradient(180deg, #181818 0%, #0A0A0A 100%);
+        width: 24%;
+        height: 100%;
+        padding: 25px 25px 100px 0;
+        margin-right: 10px;
+    }
+
+    &__filter{
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    &__filtertitle{
+        font-family: $primary-font-family;
+        font-size: 20px;
+        color: white;
+    }
+
+    &__filterdata{
+        font-family: $tertiary-font-family;
+        font-size: 15px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__chekbox{
+        cursor: pointer;
+    }
+
+    &__products{
+        display: flex;
+        width: 75%;
+        max-width: 75%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-right: 100px;
+    }
+}

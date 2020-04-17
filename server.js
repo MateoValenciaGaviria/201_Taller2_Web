@@ -36,7 +36,7 @@ app.get('/store', function (req, res){
     };
 
     //Renderizar vista
-    res.render('store');
+    res.render('store', context);
 });
 
 //Ruta para especificaciones de un producto con handlebars

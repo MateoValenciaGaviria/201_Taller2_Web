@@ -1,4 +1,74 @@
-{{#each products}}
+<div class="store">
+    <header class="container store__header">
+        <h1 class="store__title">
+            Desktop
+        </h1>
+        <div class="store__sort">
+            <h1>Sort by</h1>
+            <button class="store__button">
+                Popularity
+            </button>
+        </div>
+    </header>
+    <section class="store__section">
+        <div class="store__filtercontainer">
+            <div class="container store__filter">
+                <h1 class="store__filtertitle">
+                    GPU
+                </h1>
+                <div class="store__filterdata">
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> GTX 1660 SUPER</label>
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> GTX 1660 Ti</label>
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> GTX 1660</label>
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> GTX 2080 SUPER</label>
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> GTX 2080 Ti</label>
+                </div>
+                <h1 class="store__filtertitle">
+                    CPU
+                </h1>
+                <div class="store__filterdata">
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> Intel 10th Gen.</label>
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> Intel 9th Gen.</label>
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> Intel 8th Gen.</label>
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> Intel 7th Gen.</label>
+                </div>
+                <h1 class="store__filtertitle">
+                    Series
+                </h1>
+                <div class="store__filterdata">
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> Aegis Series</label>
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> Infinite Series</label>
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> Trident Series</label>
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> Codex Series</label>
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> Mini Pc Series</label>
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> P Series</label>
+                    <label><input type="checkbox" class="store__chekbox" value="first_checkbox"> Cubi Series</label>
+                </div>
+            </div>
+        </div>
+        <div class="store__products">
+            {{#each products}}
+            <div class="product">
+                <header class="product__header">
+                    <h2 class="product__name">{{ title }}</h2>
+                </header>
 
-{{/each}}
+                <section class="product__section">
+                    <a href="#">
+                        <img class="product__image" src="{{ img }}" alt="{{ title }}">
+                    </a>
+                    <p class="product__price">
+                        $ {{ price }}.00
+                    </p>
+                </section>
 
+                <footer class="product__footer">
+                    <button class="product__button">
+                        Add
+                    </button>
+                </footer>
+            </div>
+            {{/each}}
+        </div>
+    </section>
+</div>
