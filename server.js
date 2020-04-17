@@ -40,20 +40,20 @@ app.get('/store', function (req, res){
 });
 
 //Ruta para especificaciones de un producto con handlebars
-app.get('/product/:name/:id', function (req, res){
+app.get('/product/:title/:id', function (req, res){
     //Objeto contexto
     var context = {};
 
     //Buscar en la base de datos el producto correspondiente
     //Pasar las variables de ese elemento al contexto
-    context = products .find(function (elem){
+    context = products.find(function (elem){
         if(elem.id == req.params.id){
             return true;
         }
     });
 
     //Renderizar vista
-    res.render('product');
+    res.render('product', context);
 });
 
 //Ruta para el checkout con handlebars

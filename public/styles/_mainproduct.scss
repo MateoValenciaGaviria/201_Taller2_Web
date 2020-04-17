@@ -1,0 +1,48 @@
+.product{
+    background: #000000;
+    border: 1px solid #8D8D8D;
+    border-radius: 5px;
+    width: 292px;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header{
+        font-family: $secondary-font-family;
+        color: #FFFFFF;
+        font-size: 12px;
+        display: flex;
+        margin: 10px 0 0;
+    }
+
+    &__image{
+        height: 198px;
+        margin: 10px;
+    }
+
+    &__price{
+        text-align: center;
+        font-family: $primary-font-family;
+        color: white;
+        font-size: 28px;
+    }
+
+    &__footer{
+        display: flex;
+        align-items: center;
+        margin: auto 0 0 0;
+    }
+
+    &__button{
+        font-family: $primary-font-family;
+        color: white;
+        background-color: $secondary-color;
+        height: 100%;
+        width: 100%;   
+        border-radius: 5px;
+        border-style: none;
+        padding: 5px 80px;
+        font-size: 20px;
+    }
+}

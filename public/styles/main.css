@@ -960,4 +960,66 @@ button {
     display: flex;
   }
 }
+
+.product {
+  background: #000000;
+  border: 1px solid #8D8D8D;
+  border-radius: 5px;
+  width: 292px;
+  height: 395px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__header {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  color: #FFFFFF;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0 0;
+}
+
+.product__image {
+  height: 198px;
+  margin: 10px;
+}
+
+.product__price {
+  text-align: center;
+  font-family: "Quantico-bold";
+  color: white;
+  font-size: 28px;
+}
+
+.product__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0 0 0;
+}
+
+.product__button {
+  font-family: "Quantico-bold";
+  color: white;
+  background-color: #ED1C24;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border-style: none;
+  padding: 5px 80px;
+  font-size: 20px;
+}
 /*# sourceMappingURL=main.css.map */
