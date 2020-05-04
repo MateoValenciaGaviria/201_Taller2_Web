@@ -1050,24 +1050,32 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 10px;
+  font-size: 20px;
 }
 
-.store__button {
+.store__sortcontainer {
+  outline: none;
+  cursor: pointer;
   margin-left: 30px;
   font-family: "Quantico-bold";
   color: white;
   background-color: #ED1C24;
-  width: 156px;
+  width: 230px;
   height: 36px;
   border-radius: 5px;
   border-style: none;
-  padding: 0 50px;
+  padding: 0 10px;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: left;
+}
+
+.store__sortoptions {
+  font-family: "Quantico-bold";
+  color: #222222;
+  background-color: white;
 }
 
 .store__section {

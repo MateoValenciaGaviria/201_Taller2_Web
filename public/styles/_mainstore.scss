@@ -13,23 +13,30 @@
         margin: 0 0 0 auto;
         justify-content: center;
         align-items: center;
-        font-size: 10px;
+        font-size: 20px;
     }
 
-    &__button{
+    &__sortcontainer{
+        outline:none;
+        cursor: pointer;
         margin-left: 30px;
         font-family: $primary-font-family;
         color: white;
         background-color: $secondary-color;
-        width: 156px;
+        width: 230px;
         height: 36px;   
         border-radius: 5px;
         border-style: none;
-        padding: 0 50px;
+        padding: 0 10px;
         font-size: 20px;
         display: flex;
         text-align: left;
-        
+    }
+
+    &__sortoptions{
+        font-family: $primary-font-family;
+        color: $primary-color;
+        background-color: white;
     }
 
     &__section{

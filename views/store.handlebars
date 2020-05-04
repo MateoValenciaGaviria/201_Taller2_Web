@@ -3,11 +3,20 @@
         <h1 class="store__title">
             Desktop
         </h1>
-        <div class="store__sort">
+        {{!-- <div class="store__sort">
             <h1>Sort by</h1>
             <button class="store__button">
                 Popularity
             </button>
+        </div> --}}
+        <div class="store__sort">
+            <h1>Sort by</h1>
+            <select class="store__sortcontainer">
+                <option class="store__sortoptions" value="" disabled="true" selected="true">Select an option...</option>
+                <option class="store__sortoptions" value="Popularity">Popularity</option>
+                <option class="store__sortoptions" value="Release">Release</option>
+                <option class="store__sortoptions" value="Name">Name</option>
+            </select>
         </div>
     </header>
     <section class="store__section">

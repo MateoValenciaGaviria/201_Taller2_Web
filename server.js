@@ -1,70 +1,49 @@
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
 //Importar express
 const express = require('express');
-
-//Importar path
-const path = require('path');
-
 //Importar express-handlebars
 const exphbs = require('express-handlebars');
 
 //Importar productos
-const products = require('./products');
+const configureRoutes = require('./routes');
+
+//Importar path
+const path = require('path');
 
 //Instanciar servidor de express
 const app = express();
 
+//Configurar carpeta publica
+app.use(express.static('public'));
+
 //Registrar motor de render para handle-bars
 app.engine('handlebars', exphbs());
-
 //Use el motor de render handle-bars
 app.set('view engine', 'handlebars');
 
-app.use(express.static('public'));
+// Connection URL
+const url = 'mongodb://localhost:27017';
 
-//Configurar ruta inicial
-app.get('/', function (req, res){
-    console.log('hola en la consola');
-    //Responder con un archivo
-    res.sendFile(path.join(__dirname, '/public/index.html'));
-});
+// Database Name
+const dbName = 'Msi_portal';
 
-//Ruta para la lista de productos con handlebars
-app.get('/store', function (req, res){
-    //Objeto contexto
-    var context = {
-        products: products,
-    };
+// Create a new MongoClient
+const client = new MongoClient(url);
 
-    //Renderizar vista
-    res.render('store', context);
-});
+// Use connect method to connect to the Server
+client.connect(function(err) {
+  assert.equal(null, err);
+  console.log("Connected successfully to server");
 
-//Ruta para especificaciones de un producto con handlebars
-app.get('/product/:title/:id', function (req, res){
-    //Objeto contexto
-    var context = {};
+  const db = client.db(dbName);
 
-    //Buscar en la base de datos el producto correspondiente
-    //Pasar las variables de ese elemento al contexto
-    context = products.find(function (elem){
-        if(elem.id == req.params.id){
-            return true;
-        }
-    });
-
-    //Renderizar vista
-    res.render('product', context);
-});
-
-//Ruta para el checkout con handlebars
-app.get('/checkout', function (req, res){
-    //Renderizar vista
-    res.render('checkout');
+  configureRoutes(app, db);
 });
  
 //Iniciar servidor en puerto 3000
 app.listen(3000, function (){
-    console.log('servidor iniciado en puerto 3000');
+    console.log('app escuchando');
 });
 
 //npm - node package manager
