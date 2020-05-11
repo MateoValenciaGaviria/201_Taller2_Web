@@ -14,6 +14,8 @@ const path = require('path');
 //Instanciar servidor de express
 const app = express();
 
+app.use(express.urlencoded({ extended: true }));
+
 //Configurar carpeta publica
 app.use(express.static('public'));
 
