@@ -61,7 +61,7 @@ function configureRoutes(app, db) {
         // Get the documents collection
         const collection = db.collection('products');
         // Find some documents
-        collection.find(filters).sort(sortings).toArray(function(err, docs) {
+        collection.find(filters).sort(sortings).toArray(function (err, docs) {
             assert.equal(err, null);
 
             //Objeto contexto
@@ -113,14 +113,31 @@ function configureRoutes(app, db) {
 
     //Ruta para el formulario con handlebars
     app.get('/form', function (req, res) {
+        var context = {
+            showError: req.query.error,
+        }
         //Renderizar vista
-        res.render('form');
+        res.render('form', context);
     });
 
     //Recibir informacion del usuario
     app.post('/form', function (req, res) {
+
+        req.body.creation_date = new Date();
+
+        if(!req.body.name || !req.body.last_name || 
+        !req.body.id_document || !req.body.id_number || 
+        !req.body.address || !req.body.payment_method || !req.body.payment_method_number){
+            //res.send('error');
+            res.redirect('/form?error=true')
+            return;
+        }
+
+        const collection = db.collection('orders');
+        collection.insertOne(req.body);
         //Renderizar vista
-        res.send('test');
+        //res.send('test');
+        res.redirect('/store')
     });
 }
 

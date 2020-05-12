@@ -4,6 +4,12 @@
             <h1 class="form__title">
                 Payment information
             </h1>
+            {{#if showError}}
+            <section class="form__error">
+                <h3 class="form__errorh3">Error!</h3>
+                <p class="form__errorp">An error occurred while submitting the form</p>
+            </section>
+            {{/if}}
             <form class="form__structure" action="/form" method="POST">
                 <label class="form__label">
                     Name

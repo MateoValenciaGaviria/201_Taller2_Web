@@ -1287,6 +1287,7 @@ button {
           flex-direction: column;
   width: 40%;
   margin-left: 100px;
+  margin-bottom: 200px;
 }
 
 .form__background {
@@ -1303,6 +1304,24 @@ button {
   font-family: "Quantico-bold";
   font-size: 36px;
   color: white;
+}
+
+.form__error {
+  margin-bottom: 40px;
+}
+
+.form__errorh3 {
+  font-family: "Quantico-bold";
+  font-size: 36px;
+  color: #ED1C24;
+  margin: 0;
+}
+
+.form__errorp {
+  font-family: "Quantico-bold";
+  font-size: 24px;
+  color: #ED1C24;
+  margin: 0;
 }
 
 .form__structure {
