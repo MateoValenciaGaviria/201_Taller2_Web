@@ -16,15 +16,31 @@
         width: 40%;
         margin-left: 100px;
         margin-bottom: 200px;
+
+        @media (max-width: $breakpoint-sm){
+            margin-left: 20px;
+            width: 90%;
+        }
     }
 
     &__background{
         height: 1280px;
+        @media (max-width: $breakpoint-sm){
+            display: none;
+        }
     }
 
     &__image{
         position: absolute;
         bottom: 0;
+        right: 0;
+        @media (max-width: $breakpoint-sm){
+            display: none;
+        }
+
+        @media (max-width: 1290px){
+            display: none;
+        }
     }
 
     &__title{
@@ -32,6 +48,11 @@
         font-family: $primary-font-family;
         font-size: 36px;
         color: white;
+
+        @media (max-width: $breakpoint-sm){
+            font-size: 30px;
+            width: 100%;
+        }
     }
 
     &__error{
@@ -43,6 +64,9 @@
         font-size: 36px;
         color: $secondary-color;
         margin: 0;
+        @media (max-width: $breakpoint-sm){
+            font-size: 30px;
+        }
     }
 
     &__errorp{
@@ -50,6 +74,9 @@
         font-size: 24px;
         color: $secondary-color;
         margin: 0;
+        @media (max-width: $breakpoint-sm){
+            font-size: 20px;
+        }
     }
 
     &__structure{
@@ -64,6 +91,11 @@
         font-family: $tertiary-font-family;
         color: white;
         margin-bottom: 40px;
+
+        @media (max-width: $breakpoint-sm){
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
     }
 
     &__input{
@@ -108,5 +140,15 @@
         justify-content: center;
         left: 50%;
         margin-left:-197px;
+
+        @media (max-width: $breakpoint-sm){
+            width: 68%;
+            height: 50px;  
+            left: 50%;
+            margin-left:-34%;
+            font-size: 24px;
+            bottom: 10%;
+            margin-bottom:-25px;
+        }
     }
 }

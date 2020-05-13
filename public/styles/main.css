@@ -1420,13 +1420,39 @@ button {
   margin-bottom: 200px;
 }
 
+@media (max-width: 1000px) {
+  .form__main {
+    margin-left: 20px;
+    width: 90%;
+  }
+}
+
 .form__background {
   height: 1280px;
+}
+
+@media (max-width: 1000px) {
+  .form__background {
+    display: none;
+  }
 }
 
 .form__image {
   position: absolute;
   bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 1000px) {
+  .form__image {
+    display: none;
+  }
+}
+
+@media (max-width: 1290px) {
+  .form__image {
+    display: none;
+  }
 }
 
 .form__title {
@@ -1434,6 +1460,13 @@ button {
   font-family: "Quantico-bold";
   font-size: 36px;
   color: white;
+}
+
+@media (max-width: 1000px) {
+  .form__title {
+    font-size: 30px;
+    width: 100%;
+  }
 }
 
 .form__error {
@@ -1447,11 +1480,23 @@ button {
   margin: 0;
 }
 
+@media (max-width: 1000px) {
+  .form__errorh3 {
+    font-size: 30px;
+  }
+}
+
 .form__errorp {
   font-family: "Quantico-bold";
   font-size: 24px;
   color: #ED1C24;
   margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .form__errorp {
+    font-size: 20px;
+  }
 }
 
 .form__structure {
@@ -1476,6 +1521,13 @@ button {
   font-family: "Quantico-regular";
   color: white;
   margin-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+  .form__label {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
 }
 
 .form__input {
@@ -1524,6 +1576,18 @@ button {
           justify-content: center;
   left: 50%;
   margin-left: -197px;
+}
+
+@media (max-width: 1000px) {
+  .form__button {
+    width: 68%;
+    height: 50px;
+    left: 50%;
+    margin-left: -34%;
+    font-size: 24px;
+    bottom: 10%;
+    margin-bottom: -25px;
+  }
 }
 
 .checkout {
