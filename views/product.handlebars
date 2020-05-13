@@ -21,7 +21,11 @@
                 <tr><td class="mainspecs__row">{{ description9 }}</td></tr>
             </table>
             <div class="productspecs__shopping">
-                <button class="productspecs__button">
+                <button class="productspecs__button" 
+                data-id="{{ _id }}" 
+                data-img="{{ img }}" 
+                data-name="{{ title }}" 
+                data-price="{{ price }}">
                         Add
                 </button>
                 <h1 class="productspecs__price">

@@ -29,6 +29,22 @@
         }
     }
 
+    &__shopcartnumbercontainer{
+        display: flex;
+        position: absolute;
+        background-color: $secondary-color;
+        border-radius: 100px;  
+        padding: 1px 5px;
+        bottom: 52px;
+        right: -8px;
+    }
+
+    &__shopcartnumber{
+        color: white;
+        font-family: $tertiary-font-family;
+        font-size: 10px;
+    }
+
     &__link{
         color: #8D8D8D;
         text-decoration: none;

@@ -26,31 +26,31 @@
                     GPU
                 </h1>
                 <div class="store__filterdata">
-                    <label><input class="store__1660SUPER" type="checkbox" value="GTX_1660_SUPER"> GTX 1660 SUPER</label>
-                    <label><input class="store__1660Ti" type="checkbox" value="GTX_1660_Ti"> GTX 1660 Ti</label>
-                    <label><input class="store__1660" type="checkbox" value="GTX_1660"> GTX 1660</label>
-                    <label><input class="store__2080SUPER" type="checkbox" value="GTX_2080_SUPER"> GTX 2080 SUPER</label>
-                    <label><input class="store__2080Ti" type="checkbox" value="GTX_2080_Ti"> GTX 2080 Ti</label>
+                    <label><input class="store__chekbox store__1660SUPER" type="checkbox" value="GTX_1660_SUPER"> GTX 1660 SUPER</label>
+                    <label><input class="store__chekbox store__1660Ti" type="checkbox" value="GTX_1660_Ti"> GTX 1660 Ti</label>
+                    <label><input class="store__chekbox store__1660" type="checkbox" value="GTX_1660"> GTX 1660</label>
+                    <label><input class="store__chekbox store__2080SUPER" type="checkbox" value="GTX_2080_SUPER"> GTX 2080 SUPER</label>
+                    <label><input class="store__chekbox store__2080Ti" type="checkbox" value="GTX_2080_Ti"> GTX 2080 Ti</label>
                 </div>
                 <h1 class="store__filtertitle">
                     CPU
                 </h1>
                 <div class="store__filterdata">
-                    <label><input class="store__10" type="checkbox" value="Intel_10th_Gen"> Intel 10th Gen.</label>
-                    <label><input class="store__9" type="checkbox" value="Intel_9th_Gen"> Intel 9th Gen.</label>
-                    <label><input class="store__8" type="checkbox" value="Intel_8th_Gen"> Intel 8th Gen.</label>
-                    <label><input class="store__7" type="checkbox" value="Intel_7th_Gen"> Intel 7th Gen.</label>
+                    <label><input class="store__chekbox store__10" type="checkbox" value="Intel_10th_Gen"> Intel 10th Gen.</label>
+                    <label><input class="store__chekbox store__9" type="checkbox" value="Intel_9th_Gen"> Intel 9th Gen.</label>
+                    <label><input class="store__chekbox store__8" type="checkbox" value="Intel_8th_Gen"> Intel 8th Gen.</label>
+                    <label><input class="store__chekbox store__7" type="checkbox" value="Intel_7th_Gen"> Intel 7th Gen.</label>
                 </div>
                 <h1 class="store__filtertitle">
                     Series
                 </h1>
                 <div class="store__filterdata">
-                    <label><input class="store__Aegis" type="checkbox" value="Aegis_Series"> Aegis Series</label>
-                    <label><input class="store__Infinite" type="checkbox" value="Infinite_Series"> Infinite Series</label>
-                    <label><input class="store__Trident" type="checkbox" value="Trident_Series"> Trident Series</label>
-                    <label><input class="store__Codex" type="checkbox" value="Codex_Series"> Codex Series</label>
-                    <label><input class="store__P" type="checkbox" value="P_Series"> P Series</label>
-                    <label><input class="store__Cubi" type="checkbox" value="Cubi_Series"> Cubi Series</label>
+                    <label><input class="store__chekbox store__Aegis" type="checkbox" value="Aegis_Series"> Aegis Series</label>
+                    <label><input class="store__chekbox store__Infinite" type="checkbox" value="Infinite_Series"> Infinite Series</label>
+                    <label><input class="store__chekbox store__Trident" type="checkbox" value="Trident_Series"> Trident Series</label>
+                    <label><input class="store__chekbox store__Codex" type="checkbox" value="Codex_Series"> Codex Series</label>
+                    <label><input class="store__chekbox store__P" type="checkbox" value="P_Series"> P Series</label>
+                    <label><input class="store__chekbox store__Cubi" type="checkbox" value="Cubi_Series"> Cubi Series</label>
                 </div>
             </div>
         </div>
@@ -71,7 +71,11 @@
                 </section>
 
                 <footer class="product__footer">
-                    <button class="product__button">
+                    <button class="product__button" 
+                    data-id="{{ _id }}" 
+                    data-img="{{ img }}" 
+                    data-name="{{ title }}" 
+                    data-price="{{ price }}">
                         Add
                     </button>
                 </footer>

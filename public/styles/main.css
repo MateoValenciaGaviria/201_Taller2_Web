@@ -44,6 +44,7 @@ input {
 
 button {
   outline: none;
+  cursor: pointer;
 }
 
 .mainheader {
@@ -87,6 +88,24 @@ button {
   .mainheader__linkcontainer {
     padding: 10px 10px;
   }
+}
+
+.mainheader__shopcartnumbercontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background-color: #ED1C24;
+  border-radius: 100px;
+  padding: 1px 5px;
+  bottom: 52px;
+  right: -8px;
+}
+
+.mainheader__shopcartnumber {
+  color: white;
+  font-family: "Quantico-regular";
+  font-size: 10px;
 }
 
 .mainheader__link {
