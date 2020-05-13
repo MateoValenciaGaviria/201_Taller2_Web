@@ -127,11 +127,14 @@ function configureRoutes(app, db) {
 
         if(!req.body.name || !req.body.last_name || 
         !req.body.id_document || !req.body.id_number || 
-        !req.body.address || !req.body.payment_method || !req.body.payment_method_number){
+        !req.body.address || !req.body.payment_method || 
+        !req.body.payment_method_number || !req.body.products){
             //res.send('error');
             res.redirect('/form?error=true')
             return;
         }
+
+        req.body.products = JSON.parse(req.body.products);
 
         const collection = db.collection('orders');
         collection.insertOne(req.body);

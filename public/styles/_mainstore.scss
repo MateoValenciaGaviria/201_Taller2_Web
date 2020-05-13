@@ -5,6 +5,10 @@
         font-family: $primary-font-family;
         font-size: 20px;
         color: white;
+
+        @media (max-width: $breakpoint-sm){
+            font-size: 14px;
+        }
     }
 
     &__sort{
@@ -14,6 +18,10 @@
         justify-content: center;
         align-items: center;
         font-size: 20px;
+
+        @media (max-width: $breakpoint-sm){
+            display: none;
+        }
     }
 
     &__sortcontainer{
@@ -42,6 +50,11 @@
     &__section{
         display: flex;
         flex-direction: row;
+
+        @media (max-width: $breakpoint-sm){
+            justify-content: center;
+            padding-bottom: 60px;
+        }
     }
 
     &__filtercontainer{
@@ -49,6 +62,10 @@
         width: 24%;
         padding: 25px 25px 100px 0;
         margin-right: 10px;
+
+        @media (max-width: $breakpoint-sm){
+            display: none;
+        }
     }
 
     &__filter{
@@ -82,5 +99,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding-right: 100px;
+
+        @media (max-width: $breakpoint-sm){
+            justify-content: center;
+            padding: 0;
+        }
     }
 }

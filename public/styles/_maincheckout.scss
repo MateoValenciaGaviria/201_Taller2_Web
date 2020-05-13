@@ -4,11 +4,19 @@
     flex-direction: column;
     padding: 0 100px;
 
+    @media (max-width: $breakpoint-sm){
+        padding: 0 20px;
+    }
+
     &__title{
         font-family: $primary-font-family;
         color: white;
         font-size: 36px;
         margin: 60px 0 15px 0;
+
+        @media (max-width: $breakpoint-sm){
+            font-size: 30px;
+        }
     }
 
     &__subtitle{
@@ -18,10 +26,19 @@
         display: flex;
         flex-direction: row;
         margin: 15px 0 10px 0;
+
+        @media (max-width: $breakpoint-sm){
+            font-size: 24px;
+            display: flex;
+            justify-content: space-around;
+        }
     }
 
     &__subtitleunit{
         width: 70%;
+        @media (max-width: $breakpoint-sm){
+            width: 0;
+        }
     }
 
     &__container{
@@ -44,6 +61,11 @@
         flex-direction: row;
         align-items: center;
         margin-top: 10px;
+
+        @media (max-width: $breakpoint-sm){
+            align-content: center;
+            justify-content: space-around;
+        }
     }
 
     &__imgname{
@@ -51,14 +73,29 @@
         flex-direction: row;
         width: 70%;
         align-items: center;
+
+        @media (max-width: $breakpoint-sm){
+            flex-direction: column-reverse;
+            width: 50%;
+        }
     }
 
     &__productimg{
         width: 30%;
+        @media (max-width: $breakpoint-sm){
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__image{
         width: 100%;
+        @media (max-width: $breakpoint-sm){
+            flex-direction: column-reverse;
+            width: 200%;
+            margin: 0 auto;
+        }
     }
 
     &__productname{
@@ -66,12 +103,21 @@
         color: white;
         font-size: 24px;
         margin-left: 30px;
+
+        @media (max-width: $breakpoint-sm){
+            margin-left: 0;
+            font-size: 14px;
+        }
     }
 
     &__productprice{
         font-family: $primary-font-family;
         color: white;
         font-size: 24px;
+
+        @media (max-width: $breakpoint-sm){
+            font-size: 18px;
+        }
     }
 
     &__footer{
@@ -79,6 +125,11 @@
         position: relative;
         height: 300px;
         background-color: black;
+
+        @media (max-width: $breakpoint-sm){
+            width: 100%;
+            height: 200px;
+        }
     }
 
     &__img{
@@ -86,6 +137,10 @@
         position: absolute;
         bottom: 0;
         right: 0;
+
+        @media (max-width: $breakpoint-sm){
+            display: none;
+        }
     }
 
     &__button{
@@ -104,5 +159,15 @@
         justify-content: center;
         left: 50%;
         margin-left:-197px;
+
+        @media (max-width: $breakpoint-sm){
+            width: 68%;
+            height: 50px;  
+            left: 50%;
+            margin-left:-34%;
+            font-size: 24px;
+            bottom: 50%;
+            margin-bottom:-25px;
+        }
     }
 }

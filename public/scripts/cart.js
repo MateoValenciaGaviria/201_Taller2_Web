@@ -1,3 +1,9 @@
+//Menu interaction
+var mainheader__navmobile = document.querySelector('.mainheader__navmobile');
+var hambtn = document.querySelector('.mainheader__hamburguerbtn');
+hambtn.addEventListener('click', handleHamClick);
+
+
 var buttons = document.querySelectorAll('.product__button');
 var buttonProductSpecs = document.querySelectorAll('.productspecs__button');
 var cartNumber = document.querySelector('.mainheader__shopcartnumber');
@@ -79,3 +85,22 @@ buttonSendCheckout.addEventListener('click', function(e){
     var url = 'http://localhost:3000/form';
     location.href = url;
 });
+
+function handleHamClick(){
+    mainheader__navmobile.classList.toggle('mainheader__navmobile--active');
+}
+
+function handleWindowResize (event) {
+    if(window.innerWidth > 1000){
+        mainheader__navmobile.classList.remove('mainheader__navmobile--active');
+    }
+}
+window.addEventListener('resize', handleWindowResize);
+
+//Features interaction
+var mainfeatures__navtitles = document.querySelector('.mainfeatures__navtitles');
+mainfeatures__navtitles.addEventListener('click', handleFeaturesClick);
+
+function handleFeaturesClick(){
+    mainfeatures__navtitles.classList.toggle('mainfeatures__navtitles--selected');
+}
