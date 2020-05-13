@@ -14,14 +14,6 @@ function handleWindowResize (event) {
 }
 window.addEventListener('resize', handleWindowResize);
 
-//Features interaction
-var mainfeatures__navtitles = document.querySelector('.mainfeatures__navtitles');
-mainfeatures__navtitles.addEventListener('click', handleFeaturesClick);
-
-function handleFeaturesClick(){
-    mainfeatures__navtitles.classList.toggle('mainfeatures__navtitles--selected');
-}
-
 //Keyboard interaction
 var mouseTrackingColor = document.querySelector('.mainkeyboard__color');
 var hoverLayoutMouse = document.addEventListener.bind(document);
